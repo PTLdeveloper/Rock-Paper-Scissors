@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="css/rockpaperscissors.css" type="text/css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+	<script src="js/rockpaperscissors.js"></script>
+        <title>Rock-Paper-Scissors</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <div id="wrapper">
+            <table id="table_score">
+                <tr>
+                    <td class="td_score">
+                        <p class="namePlayer">Multiplayer</p>
+                    </td>
+                    <td class="td_score">
+                        <label id="scorecomputer">0</label>
+                        <label>-</label>
+                        <label id="scoreyou">0</label>
+                    </td>
+                    <td class="td_score">
+                        <p>You</p>
+                    </td>
+                </tr>
+            </table>
+
+            <table id="table_game">
+                <tr>
+                    <td>
+                        <p class="computerResult">---</p>
+                    </td>
+                    <td>
+                        <p class="myResult">---</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lefthand">
+                        <img id="img_lefthand" src="images/handleftrock.png">
+                    </td>
+                    <td class="righthand">
+                        <img id="img_righthand" src="images/handrightrock.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="optionsleft">
+                        <img id="rockleft" name="rock" src="images/rock.png" alt="rock" height="100">
+                        <img id="paperleft" name="paper" src="images/paper.png" alt="paper" height="100">
+                        <img id="scissorsleft" name="scissors" src="images/scissors.png" alt="scissors" height="100">
+                    </td>
+                    <td class="optionsright">
+                        <img id="rockright" name="rock" src="images/rock.png" alt="rock" height="100">
+                        <img id="paperright" name="paper" src="images/paper.png" alt="paper" height="100">
+                        <img id="scissorsright" name="scissors" src="images/scissors.png" alt="scissors" height="100">
+                    </td>
+                </tr>
+            </table>
+   
+        </div>
+        
+        <div id="switchwrapper">
+            <label>Multiplayer</label>
+            <label class="switch">
+            <input id="switcher" type="checkbox">
+            <div class="slider round"></div>
+            
+            </label>
+            <label>Computer</label>
+        </div>
+    </body>
+    
+</html>

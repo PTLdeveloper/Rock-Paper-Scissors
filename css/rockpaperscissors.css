@@ -1,0 +1,141 @@
+/* 
+    Author     : PTLdeveloper
+    Created on : 25-feb-2017
+    Last update: 27-feb-2017
+*/
+
+body
+{
+    background-color: #f5deb3;
+    font-family: Verdana;
+    
+}
+
+/* Main div */
+#wrapper
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+/* Score gradient */
+#table_score
+{
+    width: 100%;
+    border-radius: 100px;
+    background: rgba(252,234,187,1);
+    background: -moz-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,234,187,1)), color-stop(50%, rgba(252,205,77,1)), color-stop(51%, rgba(248,181,0,1)), color-stop(100%, rgba(251,223,147,1)));
+    background: -webkit-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+    background: -o-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+    background: -ms-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+    background: linear-gradient(to bottom, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93', GradientType=0 );
+}
+
+#table_game
+{
+    margin-top: 3%;
+    width: 100%;
+}
+
+.td_score
+{
+    width: 33%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.lefthand, .righthand, .computerResult, .myResult
+{
+    text-align: center;
+}
+
+.optionsright
+{
+    width: 50%;
+    padding-top: 5%;
+    text-align: right;
+}
+
+.optionsleft
+{
+    width: 50%;
+    padding-top: 5%;
+    text-align: left;
+}
+
+/* Change of colors when mouse over */
+#rockright:hover, #paperright:hover, #scissorsright:hover,
+#rockleft:hover, #paperleft:hover, #scissorsleft:hover
+{
+    border-radius: 20px;
+    background-color: #f6e09c;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 1px;
+  bottom: 0px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18x);
+  transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 50px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Div for the switch */
+#switchwrapper
+{
+    position:absolute;
+    bottom:0;
+}
