@@ -25,7 +25,7 @@ $(document).ready(function(){
         //Restoring values
         $('#scoreyou').text('0');
         $('#scorecomputer').text('0');
-        $.fn.inicialize('all');
+        $.fn.initialize('all');
         
     });
 });
@@ -50,7 +50,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('#rockright').click(function(){
         
-        $.fn.inicialize('right');
+        $.fn.initialize('right');
         
         if($.fn.switchIsOn() === false)
         {
@@ -69,7 +69,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('#rockleft').click(function(){
         
-        $.fn.inicialize('left');
+        $.fn.initialize('left');
         
         $.fn.playMulti($(this), 'left');
 
@@ -80,7 +80,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('#paperright').click(function(){
         
-        $.fn.inicialize('right');
+        $.fn.initialize('right');
         
         if($.fn.switchIsOn() === false)
         {
@@ -99,7 +99,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('#paperleft').click(function(){
         
-        $.fn.inicialize('left');
+        $.fn.initialize('left');
         
         $.fn.playMulti($(this), 'left');
 
@@ -110,7 +110,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('#scissorsright').click(function(){
 
-        $.fn.inicialize('right');
+        $.fn.initialize('right');
         
         if($.fn.switchIsOn() === false)
         {
@@ -129,14 +129,14 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('#scissorsleft').click(function(){
 
-        $.fn.inicialize('left');
+        $.fn.initialize('left');
         
         $.fn.playMulti($(this), 'left');
 
     });
 });
 
-//Game against computer
+//Actions to do in multiplayer mode
 $(document).ready(function(){
     $.fn.playMulti = function(element, handside){ 
         
@@ -166,7 +166,7 @@ $(document).ready(function(){
         //Conditions to win/lose if I use rock
         if(myItem === 'rock')
         {
-             iWin = rock[computerItem];
+            iWin = rock[computerItem];
         }
         
         //Conditions to win/lose if I use paper
@@ -307,7 +307,7 @@ $(document).ready(function(){
             }
             
             //Restoring values
-            $.fn.inicialize('leftright');
+            $.fn.initialize('leftright');
             
         }
     };  
@@ -335,10 +335,10 @@ $(document).ready(function(){
     };
 });
 
-//Function to inicialize data
+//Function to initialize data
 //param: deleteall ('all', 'left', 'right', 'leftright')
 $(document).ready(function(){
-    $.fn.inicialize = function(deleteall){ 
+    $.fn.initialize = function(deleteall){ 
         
         //Restauring borders
         $('.lefthand').css('border', 'none');
